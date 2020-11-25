@@ -12,16 +12,11 @@
     var len_ = array.length - 1;
     var first = array[0];
     var last = array[len_];
-    var isStart = first === char;
-    var isEnd = last === char;
+    var idx = -1;
 
-    if (isStart) {
-      array.splice(0, 1);
-    }
-
-    if (isEnd) {
-      array.splice(len_, 1);
-    }
+    first === char && (idx = 0);
+    last === char && (idx = len_);
+    idx !== -1 && array.splice(idx, 1);
 
     if (shouldTrim(array, char)) {
       return trim(array, char);
@@ -32,10 +27,7 @@
 
   nx.arrayTrim = function (inArray, inChar) {
     var char = arguments.length === 1 ? null : inChar;
-    var shouldEmpty = inArray.every(function (item) {
-      return item === char;
-    });
-
+    var shouldEmpty = inArray.every(function (item) { return item === char; });
     return shouldEmpty ? ((inArray.length = 0), inArray) : trim(inArray, char);
   };
 
