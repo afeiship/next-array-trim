@@ -18,11 +18,7 @@
     last === char && (idx = len_);
     idx !== -1 && array.splice(idx, 1);
 
-    if (shouldTrim(array, char)) {
-      return trim(array, char);
-    }
-
-    return array;
+    return shouldTrim(array, char) ? trim(array, char) : array;
   };
 
   nx.arrayTrim = function (inArray, inChar) {

@@ -3,7 +3,7 @@
  * description: Trim array like string.trim for next.
  * homepage: https://github.com/afeiship/next-array-trim
  * version: 1.0.1
- * date: 2020-11-25 12:48:44
+ * date: 2020-11-25 12:53:57
  * license: MIT
  */
 
@@ -27,11 +27,7 @@
     last === char && (idx = len_);
     idx !== -1 && array.splice(idx, 1);
 
-    if (shouldTrim(array, char)) {
-      return trim(array, char);
-    }
-
-    return array;
+    return shouldTrim(array, char) ? trim(array, char) : array;
   };
 
   nx.arrayTrim = function (inArray, inChar) {
