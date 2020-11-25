@@ -1,6 +1,6 @@
 {
   "name": "@jswork/next-array-trim",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Trim array like string.trim for next.",
   "homepage": "https://github.com/afeiship/next-array-trim",
   "author": {
