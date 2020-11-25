@@ -16,7 +16,7 @@ npm install -S @jswork/next-array-trim
 import '@jswork/next-array-trim';
 
 const arr = [undefined, undefined, undefined, 'a', 'b', 'c', undefined];
-nx.arrayTrim(arr);    // ['a','b','c']
+nx.arrayTrim(arr, undefined);    // ['a','b','c']
 ```
 
 ## license
