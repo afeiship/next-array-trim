@@ -17,5 +17,10 @@
       const arr = [undefined, undefined, undefined, 'a', 'b', 'c', undefined];
       expect(nx.arrayTrim(arr, undefined)).toEqual(['a', 'b', 'c']);
     });
+
+    test('nx.arrayTrim with nromal array with special char', function () {
+      const arr = [undefined, undefined, undefined, 'a', undefined, 'b', 'c', undefined];
+      expect(nx.arrayTrim(arr, undefined)).toEqual(['a', undefined, 'b', 'c']);
+    });
   });
 })();
