@@ -3,7 +3,7 @@
  * description: Trim array like string.trim for next.
  * homepage: https://github.com/afeiship/next-array-trim
  * version: 1.0.0
- * date: 2020-11-25 11:36:51
+ * date: 2020-11-25 11:38:25
  * license: MIT
  */
 
