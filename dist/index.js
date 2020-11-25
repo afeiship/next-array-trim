@@ -2,8 +2,8 @@
  * name: @jswork/next-array-trim
  * description: Trim array like string.trim for next.
  * homepage: https://github.com/afeiship/next-array-trim
- * version: 1.0.1
- * date: 2020-11-25 13:00:02
+ * version: 1.0.2
+ * date: 2020-11-25 13:00:47
  * license: MIT
  */
 
